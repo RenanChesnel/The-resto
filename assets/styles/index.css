@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "font1";
+  src: url(../fonts/Inter-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "font2";
+  src: url(../fonts/Merriweather-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a, a:visited {
+  color: rgb(243, 243, 243);
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=index.css.map */

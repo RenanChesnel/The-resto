@@ -1,0 +1,47 @@
+// Reglages generaux
+@font-face {
+    font-family: "Allura-Regular";
+    src: url(/Project/The-Resto/assets/fonts/Allura-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url(/Project/The-Resto/assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(/Project/The-Resto/assets/fonts/Roboto-Light.ttf);
+}
+$font1:Allura-Regular,sans-serif;
+$font2:Poppins-Medium,serif;
+$font3:Roboto-Light,serif;
+
+$black1:black;
+$white1:white;
+$orange1:orange;
+$grey:$grey;
+
+
+//MIXINS (variable "center" avec plusieurs reglages)
+@mixin title {
+    font-family: $font1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+// ralenti la descent lorsque l'on clique sur la fleche
+html{
+    scroll-behavior: smooth;
+}
+a, a:visited{
+    color:$white1;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
