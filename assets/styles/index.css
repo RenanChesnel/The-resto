@@ -1,10 +1,14 @@
 @font-face {
-  font-family: "font1";
-  src: url(../fonts/Inter-ExtraBold.ttf);
+  font-family: "Allura-Regular";
+  src: url(/Project/The-Resto/assets/fonts/Allura-Regular.ttf);
 }
 @font-face {
-  font-family: "font2";
-  src: url(../fonts/Merriweather-Light.ttf);
+  font-family: "Poppins-Medium";
+  src: url(/Project/The-Resto/assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(/Project/The-Resto/assets/fonts/Roboto-Light.ttf);
 }
 * {
   margin: 0;
@@ -18,10 +22,402 @@ html {
 }
 
 a, a:visited {
-  color: rgb(243, 243, 243);
+  color: white;
   text-decoration: none;
 }
 
 a {
   text-decoration: none;
+}
+
+body {
+  background: black;
+}
+
+/*----------header--------------------*/
+header {
+  background: url(/Project/The-Resto/assets/img/bg-slider-06.jpg) center/cover;
+  position: relative;
+  max-width: 1200px;
+  width: 80%;
+  min-height: 800px;
+  margin: 10px auto;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .nav-left span {
+  color: white;
+  font-family: Allura-Regular, sans-serif;
+  font-size: 2rem;
+  margin-left: 40px;
+}
+header nav .nav-center {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: Poppins-Medium, serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+header nav .nav-center li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+header nav .nav-right {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+header nav .nav-right li {
+  margin: 0 10px;
+}
+header .header-content {
+  text-align: center;
+}
+header .header-content h1 {
+  font-family: Allura-Regular, sans-serif;
+  color: rgb(214, 169, 84);
+  margin-top: 150px;
+  font-size: 3rem;
+}
+header .header-content h2 {
+  font-family: Poppins-Medium, serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+}
+header .header-content p {
+  font-family: Poppins-Medium, serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+}
+
+.section-1 {
+  max-width: 1200px;
+  background: white;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 300px;
+  margin: 0 auto;
+}
+.section-1 .our-store {
+  background: white;
+  display: block;
+  text-align: center;
+  margin: 10px;
+  border: 1px solid black;
+  height: 400px;
+}
+.section-1 .image {
+  background: url(/Project/The-Resto/assets/img/store-01.jpg) center/cover;
+}
+
+.section-2 {
+  position: relative;
+}
+.section-2 .section-2-bgd {
+  max-width: 1200px;
+  display: grid;
+  grid-template-rows: 35% 65%;
+  height: 900px;
+  margin: 0 auto;
+}
+.section-2 .section-2-bgd .img {
+  background: url(/Project/The-Resto/assets/img/bg-menu-01.jpg);
+}
+.section-2 .menu {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+.section-2 .menu .header-menu {
+  display: block;
+  text-align: center;
+}
+.section-2 .menu .header-menu h3 {
+  color: rgb(214, 169, 84);
+  margin-bottom: 0px;
+  font-family: Allura-Regular, sans-serif;
+  font-size: 2.3rem;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.section-2 .menu .header-menu nav {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: white;
+}
+.section-2 .menu .header-menu nav ul {
+  display: flex;
+  align-items: center;
+}
+.section-2 .menu .header-menu nav ul li {
+  margin: 0 auto;
+}
+.section-2 .menu .header-menu nav ul li a:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background: white;
+  transform: translatey(30px);
+}
+.section-2 .menu .detail-menu {
+  display: block;
+  background: white;
+  top: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "a1 a2" "b1 b2" "c1 c2" "d1 d2";
+}
+.section-2 .menu .detail-menu #_1 {
+  grid-area: a1;
+}
+.section-2 .menu .detail-menu #_2 {
+  grid-area: a2;
+}
+.section-2 .menu .detail-menu #_3 {
+  grid-area: b1;
+}
+.section-2 .menu .detail-menu #_4 {
+  grid-area: b2;
+}
+.section-2 .menu .detail-menu #_5 {
+  grid-area: c1;
+}
+.section-2 .menu .detail-menu #_6 {
+  grid-area: c2;
+}
+.section-2 .menu .detail-menu #_7 {
+  grid-area: d1;
+}
+.section-2 .menu .detail-menu #_8 {
+  grid-area: d2;
+}
+.section-2 .menu .detail-menu .plate {
+  display: flex;
+  grid-template-columns: 20% 60% 20%;
+  margin: 30px;
+}
+.section-2 .menu .detail-menu .plate .description, .section-2 .menu .detail-menu .plate p {
+  text-align: left;
+}
+
+.section-3 {
+  margin: 0 50px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 400px;
+  width: 60%;
+  margin: 0 auto;
+}
+.section-3 .time-open {
+  background: black;
+  display: block;
+  text-align: center;
+  margin: 10px;
+  border: solid 1px white;
+}
+.section-3 .time-open h3 {
+  color: rgb(214, 169, 84);
+  font-family: Allura-Regular, sans-serif;
+  font-size: 1.9rem;
+  transform: translateY(15px);
+}
+.section-3 .time-open h4 {
+  color: white;
+  margin-top: 0;
+  font-family: Poppins-Medium, serif;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+.section-3 .time-open span {
+  color: rgb(214, 169, 84);
+  font-family: Poppins-Medium, serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+.section-3 .time-open img {
+  margin: 25px 0;
+}
+.section-3 .time-open p {
+  color: white;
+  font-family: Poppins-Medium, serif;
+  font-size: 0.9rem;
+}
+.section-3 .reservation {
+  background: white;
+  display: block;
+  text-align: center;
+}
+.section-3 .reservation .btn {
+  margin-top: 35px;
+  text-transform: uppercase;
+  background: black;
+  height: 45px;
+  width: 170px;
+  font-family: Poppins-Medium, serif;
+  color: white;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.section-3 .reservation .btn:hover {
+  transform: scale(1.05);
+}
+.section-3 .reservation .header-reservation h1 {
+  margin-top: 70px;
+  color: rgb(214, 169, 84);
+  font-family: Allura-Regular, sans-serif;
+  font-size: 2.3rem;
+}
+.section-3 .reservation .header-reservation h2 {
+  color: black;
+  font-family: Poppins-Medium, serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  transform: translateY(-15px);
+}
+.section-3 .reservation .header-reservation img {
+  transform: scale(0.85);
+  margin-bottom: 35px;
+}
+.section-3 .reservation .info {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 33% 33% 33%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "poeple date time" "name phone email";
+}
+.section-3 .reservation .info #poeple {
+  grid-area: people;
+  width: 100%;
+}
+.section-3 .reservation .info #date {
+  grid-area: date;
+  width: 100%;
+}
+.section-3 .reservation .info input[type=date i] {
+  width: 100%;
+}
+.section-3 .reservation .info #time {
+  grid-area: time;
+  width: 150px;
+}
+.section-3 .reservation .info input[type=time i] {
+  width: 100%;
+}
+.section-3 .reservation .info #name {
+  grid-area: name;
+  width: 150px;
+}
+.section-3 .reservation .info #phone {
+  grid-area: phone;
+  width: 150px;
+}
+.section-3 .reservation .info #email {
+  grid-area: email;
+  width: 150px;
+}
+
+.section-4 {
+  margin-top: 100px;
+  display: block;
+  text-align: center;
+  margin: 100px auto 20px;
+  width: 80%;
+}
+.section-4 h1 {
+  color: rgb(214, 169, 84);
+  font-family: Allura-Regular, sans-serif;
+  font-size: 2rem;
+}
+.section-4 h2 {
+  color: white;
+  font-family: Poppins-Medium, serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  transform: translateY(-15px);
+}
+.section-4 img {
+  margin-bottom: 20px;
+}
+.section-4 .calandar-event {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  height: 400px;
+}
+.section-4 .calandar-event .event {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 200px;
+}
+.section-4 .calandar-event .event .description {
+  background: white;
+  position: relative;
+}
+.section-4 .calandar-event .event .description h1 {
+  margin-top: 30px;
+  font-family: Roboto-Light, serif;
+  color: grey;
+  text-align: left;
+  margin-left: 50px;
+  font-size: 1.5rem;
+}
+.section-4 .calandar-event .event .description .adresse {
+  display: flex;
+  align-items: center;
+  font-family: Roboto-Light, serif;
+  color: grey;
+  margin-left: 50px;
+}
+.section-4 .calandar-event .event .description h2 {
+  font-family: Roboto-Light, serif;
+  color: black;
+  font-size: 1.5rem;
+  top: 100px;
+  transform: translateY(15px);
+}
+.section-4 .calandar-event .event .date-1 {
+  background: url(/Project/The-Resto/assets/img/event-01.jpg);
+}
+.section-4 .calandar-event .event .date-1 .text {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  background: black;
+  margin: 5%;
+  color: white;
+  position: absolute;
+  padding-top: 20px;
+}
+.section-4 .calandar-event .event .date-2 {
+  background: url(/Project/The-Resto/assets/img/event-02.jpg);
+}
+.section-4 .calandar-event .event .date-2 .text {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  background: black;
+  margin: 5%;
+  padding-top: 20px;
+  color: white;
+  position: absolute;
 }/*# sourceMappingURL=index.css.map */

@@ -17,8 +17,9 @@ $font3:Roboto-Light,serif;
 
 $black1:black;
 $white1:white;
-$orange1:orange;
-$grey:$grey;
+// $white1:green;
+$orange1:rgb(214, 169, 84);
+$grey:grey;
 
 
 //MIXINS (variable "center" avec plusieurs reglages)
@@ -44,4 +45,6 @@ a, a:visited{
 a{
     text-decoration: none;
 }
-
+body{
+    background: $black1;
+}

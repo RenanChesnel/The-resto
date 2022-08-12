@@ -19,7 +19,7 @@
     <header>
       <nav>
         <ul class="nav-left">
-          <span>resto</span>
+          <span>Resto</span>
         </ul>
         <ul class="nav-center">
           <li><a href="#"></a>home</li>
@@ -65,28 +65,31 @@
         <h5>Russel Stephens<h5>
         <h6>chef cook</h6>
       </div>
-      <div>
-        <img src="./assets/img/store-01.jpg" alt="store">
+      <div class="image">
+
       </div>
     </section>
     <section class="section-2">
       <div class="section-2-bgd">
-        <img src="./assets/img/bg-menu-01.jpg" alt="guittard">
+        <div class="black"></div>
+        <div class="img"></div>
       </div>
       <div class="menu">
-        <h3>discover</h3>
-        <img src="./assets/img/ic-plate.png" alt="fork-spoon">
-        <nav>
-          <ul class="nav-menu">
-            <li><a href="#"></a>breakfast</li>
-            <li><a href="#"></a>lunch</li>
-            <li><a href="#"></a>dinner</li>
-            <li><a href="#"></a>drinks</li>
-            <li><a href="#"></a>other</li>
-          </ul>
-        </nav>
+        <div class="header-menu">
+          <h3>discover</h3>
+          <img class="img" src="./assets/img/ic-plate.png" alt="fork-spoon">
+          <nav>
+            <ul class="nav-menu">
+              <li><a href="#"></a>Breakfast</li>
+              <li><a href="#"></a>Lunch</li>
+              <li><a href="#"></a>Dinner</li>
+              <li><a href="#"></a>Drinks</li>
+              <li><a href="#"></a>Other</li>
+            </ul>
+          </nav>
+        </div>
         <div class="detail-menu">
-          <div class="plate">
+          <div class="plate" id="_1">
             <img src="./assets/img/dish-item-01.jpg" alt="plate">
             <div class="description">
               <span>italian source mushroom</span>
@@ -94,7 +97,7 @@
             </div>
             <span>$12</span>
           </div>
-          <div class="plate">
+          <div class="plate" id="_2">
             <img src="./assets/img/dish-item-02.jpg" alt="plate">
             <div class="description">
               <span>italian source mushroom</span>
@@ -102,7 +105,7 @@
             </div>
             <span>$12</span>
           </div>
-          <div class="plate">
+          <div class="plate" id="_3">
             <img src="./assets/img/dish-item-03.jpg" alt="plate">
             <div class="description">
               <span>italian source mushroom</span>
@@ -110,7 +113,7 @@
             </div>
             <span>$12</span>
           </div>
-          <div class="plate">
+          <div class="plate" id="_4">
             <img src="./assets/img/dish-item-04.jpg" alt="plate">
             <div class="description">
               <span>italian source mushroom</span>
@@ -118,7 +121,7 @@
             </div>
             <span>$12</span>
           </div>
-          <div class="plate">
+          <div class="plate" id="_5">
             <img src="./assets/img/dish-item-05.jpg" alt="plate">
             <div class="description">
               <span>italian source mushroom</span>
@@ -126,7 +129,7 @@
             </div>
             <span>$12</span>
           </div>
-          <div class="plate">
+          <div class="plate" id="_6">
             <img src="./assets/img/dish-item-06.jpg" alt="plate">
             <div class="description">
               <span>italian source mushroom</span>
@@ -134,7 +137,7 @@
             </div>
             <span>$12</span>
           </div>
-          <div class="plate">
+          <div class="plate" id="_7">
             <img src="./assets/img/dish-item-07.jpg" alt="plate">
             <div class="description">
               <span>italian source mushroom</span>
@@ -142,7 +145,7 @@
             </div>
             <span>$12</span>
           </div>
-          <div class="plate">
+          <div class="plate" id="_8">
             <img src="./assets/img/dish-item-08.jpg" alt="plate">
             <div class="description">
               <span>italian source mushroom</span>
@@ -157,44 +160,47 @@
       <div class="time-open">
         <h3>Time</h3>
         <h4>open</h4>
-        <img src="./assets/img/ic-plate.png" alt="fork-spoon">
-        <span>monday - friday</span>
-        <p>7AM-11AM(Breakfast) <br> 11AM-10PM(Lunch/Dinner)</p>
-        <span>saturday / sunday</span>
-        <p>8AM-1PM(Brunch) <br> 1PM-9PM(Lunch/Dinner)</p>
+        <img src="./assets/img/ic-plate.png" alt="fork-spoon"> <br>
+        <span>monday - friday</span> <br>
+        <p>7AM-11AM(Breakfast) <br> 11AM-10PM(Lunch/Dinner)</p> <br>
+        <span>saturday / sunday</span> <br>
+        <p>8AM-1PM(Brunch) <br> 1PM-9PM(Lunch/Dinner)</p> <br>
         <span>+15 890 979 25 52</span>
       </div>
       <div class="reservation">
-        <h1>Reservation</h1>
-        <h2>online booking</h2>
-        <img src="./assets/img/ic-plate.png" alt="fork-spoon">
+        <div class="header-reservation">
+          <h1>Reservation</h1>
+          <h2>online booking</h2>
+          <img src="./assets/img/ic-plate.png" alt="fork-spoon">
+        </div>
+      
+        <div class="info">
+          <div class="poeple">
+            <select id="poeple">
+              <option selected="selected" value="poeple">Poeple</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </div>
+          <div class="date" id="date">     
+            <input type="date" id="start" name="trip-start"
+            value="2018-07-22"
+            min="2018-01-01" max="2018-12-31">
+          </div>
+          <div class="time" id="time">
+            <input type="time" id="appt" name="appt"
+            min="09:00" max="18:00" required>
+          </div>
+          <input id="name" type="text" placeholder="Name" />
+          <input id="phone" type="phone" placeholder="Phone" />
+          <input id="email" type="email" placeholder="Email" />
+        </div>
+        <button class="btn">book now</button>
       </div>
-      <div class="info">
-        <div class="poeple">
-          <select id="poeple">
-            <option selected="selected" value="poeple">Poeple</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-          </select>
-        </div>
-        <div class="date">     
-          <input type="date" id="start" name="trip-start"
-          value="2018-07-22"
-          min="2018-01-01" max="2018-12-31">
-        </div>
-        <div class="time">
-          <input type="time" id="appt" name="appt"
-          min="09:00" max="18:00" required>
-        </div>
-        <input id="name" type="text" placeholder="Name" />
-        <input id="phone" type="phone" placeholder="Phone" />
-        <input id="email" type="email" placeholder="Email" />
-      </div>
-      <button class="btn">book now</button>
     </section>
     <section class="section-4">
       <h1>Upcomming</h1>
@@ -203,14 +209,15 @@
       <div class="calandar-event">
         <div class="calandar-event-left">
           <div class="event">
-            <div class="date">
-              <img src="./assets/img/event-01.jpg" alt="bouteille">
-              <span>08</span>
-              <p>July</p>
+            <div class="date-1">
+              <div class="text">
+                <span>08</span>
+                <p>July</p>
+              </div>
             </div>
             <div class="description">
               <h1>Night Inspiescu Party</h1>
-              <div>
+              <div class="adresse">
                 <i class="fa-solid fa-location-dot"></i>
                 <p>Restaurant Resto</p>
                 <i class="fa-thin fa-clock-five"></i>
@@ -220,10 +227,11 @@
             </div>
           </div>
           <div class="event">
-            <div class="date">
-              <img src="./assets/img/event-02.jpg" alt="bouteille">
-              <span>08</span>
-              <p>July</p>
+            <div class="date-2">
+              <div class="text">
+                <span>08</span>
+                <p>July</p>
+              </div>
             </div>
             <div class="description">
               <h1>Night Inspiescu Party</h1>

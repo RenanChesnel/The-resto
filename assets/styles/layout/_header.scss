@@ -1,8 +1,68 @@
 /*----------header--------------------*/
+
 header{
-   background: url(/Project/The-Resto/assets/img/bg-slider-06.jpg);
+   background: url(/Project/The-Resto/assets/img/bg-slider-06.jpg)  center/cover;
    position: relative;
-   // aucupe 100% de l'écran
-   min-height: 100vh;
-   background: blue;
+   max-width: 1200px;
+   width: 80%;
+   min-height: 800px;
+   margin: 10px auto;
+   nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .nav-left{
+         span{
+            color: $white1;
+            font-family: $font1;
+            font-size: 2rem;
+            margin-left: 40px;
+         }
+      }
+      .nav-center{
+         display: flex;
+         align-items: center;
+         color: $white1;
+         font-family: $font2;
+         font-size: 0.7rem;
+         text-transform: uppercase;
+         li{
+            margin-left: 20px;
+            margin-right: 20px;
+         }      
+      }
+      .nav-right{
+         display: flex;
+         align-items: center;
+         color: $white1;
+         li{
+            margin: 0 10px;
+         }
+      }
+   }
+   .header-content{
+      text-align: center;
+      h1{
+         font-family: $font1;
+         color: $orange1;
+         margin-top: 150px;
+         font-size: 3rem;
+      }
+      h2{
+         font-family: $font2;
+         color: $white1;
+         text-transform: uppercase;
+         // margin: 10px auto;
+         font-size: 3rem;
+         letter-spacing: 1rem;
+      }
+      p{
+         font-family: $font2;
+         color: $white1;
+         text-transform: uppercase;
+         // margin: 10px auto;
+         font-size: 0.9rem;
+         letter-spacing: 0.2rem;
+      }
+   }
 }
