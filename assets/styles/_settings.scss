@@ -1,50 +1,48 @@
-// Reglages generaux
 @font-face {
-    font-family: "Allura-Regular";
-    src: url(/Project/The-Resto/assets/fonts/Allura-Regular.ttf);
-}
-@font-face {
-    font-family: "Poppins-Medium";
-    src: url(/Project/The-Resto/assets/fonts/Poppins-Medium.ttf);
+  font-family: "Allura";
+  src: url(../fonts/Allura-Regular.ttf);
 }
 @font-face {
-    font-family: "Roboto-Light";
-    src: url(/Project/The-Resto/assets/fonts/Roboto-Light.ttf);
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Medium.ttf);
 }
-$font1:Allura-Regular,sans-serif;
-$font2:Poppins-Medium,serif;
-$font3:Roboto-Light,serif;
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Light.ttf);
+}
 
-$black1:black;
-$white1:white;
-// $white1:green;
-$orange1:rgb(214, 169, 84);
-$grey:grey;
+$font1: Allura, cursive;
+$font2: Poppins, serif;
+$font3: Roboto, serif;
+$white: #eee;
+$black: #21201e;
+$grey: rgb(182, 182, 182);
+$color1: rgb(166, 114, 69);
 
+@mixin childCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-//MIXINS (variable "center" avec plusieurs reglages)
-@mixin title {
-    font-family: $font1;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+@mixin alignChildren($space) {
+  display: flex;
+  align-items: center;
+  justify-content: $space;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-// ralenti la descent lorsque l'on clique sur la fleche
-html{
-    scroll-behavior: smooth;
+
+li {
+  list-style: none;
 }
-a, a:visited{
-    color:$white1;
-    text-decoration: none;
-}
-a{
-    text-decoration: none;
-}
-body{
-    background: $black1;
+
+body {
+  text-align: center;
+  font-family: $font3;
+  background: $black;
 }
